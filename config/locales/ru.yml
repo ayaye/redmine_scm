@@ -1,5 +1,6 @@
 ru:
   button_create_new_repository: Создать новое хранилище
+  text_button_does_not_create_repository: ВНИМАНИЕ! Эта кнопка не создаёт новый репозиторий, а добавляет существующий. Для создания репозитория используйте кнопку 'Создать новое хранилище'
 
   label_repository_url: URL хранилища
   label_repository_format: хранилище

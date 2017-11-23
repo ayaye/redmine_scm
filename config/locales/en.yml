@@ -1,5 +1,6 @@
 en:
-  button_create_new_repository: Create new local repository
+  button_create_new_repository: Create new repository
+  text_button_does_not_create_repository: ATTENTION! This button doesn't create new repository, just adds existing one. Use 'Create new repository' button to create and add new repository.
   button_create_github_repository: Create mirror repository
   button_github_test_connection: Test GitHub connection
   button_github_refresh_mirror: Refresh mirror

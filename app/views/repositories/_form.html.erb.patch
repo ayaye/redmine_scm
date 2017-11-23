@@ -1,0 +1,13 @@
+--- ../../app/views/repositories/_form.html.erb 2026-09-22 17:47:49.644331209 +0300
++++ app/views/repositories/_form.html.erb 2026-09-23 02:30:16.066447320 +0300
+@@ -26,6 +26,9 @@
+ </div>
+ 
+ <p>
+-  <%= submit_tag(@repository.new_record? ? l(:button_create) : l(:button_save), :disabled => button_disabled) %>
++  <% if @repository.new_record? %>
++    <strong><font color="red"><%= l(:text_button_does_not_create_repository) %></font></strong><br/>
++  <% end %>
++  <%= submit_tag(@repository.new_record? ? l(:button_add) : l(:button_save), :disabled => button_disabled) %>
+   <%= link_to l(:button_cancel), settings_project_path(@project, :tab => 'repositories') %>
+ </p>
