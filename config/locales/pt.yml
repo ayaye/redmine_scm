@@ -2,6 +2,7 @@ pt:
   button_create_new_repository: Criar novo repositório
 
   label_repository_format: repositório
+  label_copy_to_clipboard: Copy to clipboard
 
   field_scm: SCM
 

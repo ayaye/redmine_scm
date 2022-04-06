@@ -2,6 +2,7 @@ ko:
   button_create_new_repository: 저장소 작성
 
   label_repository_format: 저장소
+  label_copy_to_clipboard: Copy to clipboard
 
   field_scm: SCM
 

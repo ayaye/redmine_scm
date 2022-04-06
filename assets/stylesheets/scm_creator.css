@@ -44,3 +44,86 @@ input#repository_url {
         margin-inline-start: 0;
     }
 }
+
+.repository-info {
+  background-color: #e9ecef;
+  border: 1px solid #e4e4e4;
+  padding: 5px;
+  margin: 4px 0 10px;
+  overflow: hidden;
+}
+
+#smart_http, #clipboard_button {
+  height: 23px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#smart_http a {
+  border-width: 1px;
+  display: block;
+  height: 21px;
+  /* Standard, Opera 10, IE 9 */
+  border-radius: 3px;
+  /* Konquerer */
+  -khtml-border-radius: 3px;
+  /* Gecko (Firefox, ...) */
+  -moz-border-radius: 3px;
+  /* Webkit (Chrome, Safari, ...) */
+  -webkit-border-radius: 3px;
+  /* IE <= 9 not supported */
+}
+
+#smart_http a,
+#smart_http a:hover,
+#smart_http a:focus,
+#smart_http.selected,
+#smart_http.active,
+#clipboard_button {
+  background-color: #eee;
+  background: linear-gradient(top,  #f8f8f8,  #ddd);
+  background: -khtml-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ddd)); /* Konquerer */
+  background: -moz-linear-gradient(top,  #f8f8f8,  #ddd); /* Gecko (Firefox, ...) */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ddd));   /* Webkit (Chrome, Safari, ...) */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#dddddd'); /* IE 5.5 - 7 */
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#dddddd'); /* IE 8 */
+  
+  border-color: #bbb;
+  border-style: solid;
+  border-width: 1px;
+  
+  color: #333;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0;
+  padding: 0 10px 0 11px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  position: relative; /* to please IE */
+}
+
+#checkout_cmd {
+  width: 400px;
+  margin: 0 5px 0 5px;
+  float: left;
+}
+
+#clipboard_button {
+  height: 21px;
+  width: 23px;
+  padding: 0;
+  border-width: 1px;
+  text-align: center;
+  
+  border-radius: 5px; /* Standard, Opera 10, IE 9 */
+  -khtml-border-radius: 3px; /* Konquerer */
+  -moz-border-radius: 3px ; /* Gecko (Firefox, ...) */
+  -webkit-border-radius: 3px; /* Webkit (Chrome, Safari, ...) */
+  /* IE <= 9 not supported */
+}
+
+#clipboard_button img {
+  padding-top: 2px;
+}

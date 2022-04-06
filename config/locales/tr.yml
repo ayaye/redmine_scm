@@ -2,6 +2,7 @@ tr:
   button_create_new_repository: Yeni depo oluştur
 
   label_repository_format: depo
+  label_copy_to_clipboard: Copy to clipboard
 
   field_scm: SCM
 

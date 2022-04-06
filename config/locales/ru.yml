@@ -4,6 +4,7 @@ ru:
 
   label_repository_url: URL хранилища
   label_repository_format: хранилище
+  label_copy_to_clipboard: Скопировать в буфер
 
   field_scm: Тип хранилища
   field_github_url: Github URL

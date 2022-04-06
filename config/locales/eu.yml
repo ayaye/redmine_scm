@@ -2,6 +2,7 @@ eu:
   button_create_new_repository: Biltegi berria sortu
 
   label_repository_format: biltegia
+  label_copy_to_clipboard: Arbelera kopiatu
 
   field_scm: SCM
 

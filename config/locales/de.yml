@@ -9,6 +9,7 @@ de:
 
   label_repository_url: Repository-URL
   label_repository_format: Repository
+  label_copy_to_clipboard: In die Zwischenablage kopieren
 
   field_scm: SCM
   field_github_url: GitHub-URL

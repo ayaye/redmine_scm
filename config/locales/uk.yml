@@ -3,6 +3,7 @@ uk:
 
   label_repository_url: URL репозиторію
   label_repository_format: репозиторій
+  label_copy_to_clipboard: Скопіювати у буфер
 
   field_scm: Тип репозиторію
   field_github_url: Github URL

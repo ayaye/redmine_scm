@@ -10,6 +10,7 @@ en:
 
   label_repository_url: Repository URL
   label_repository_format: repository
+  label_copy_to_clipboard: Copy to clipboard
 
   field_scm: SCM
   field_github_url: GitHub URL
