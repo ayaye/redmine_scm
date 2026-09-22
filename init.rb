@@ -27,8 +27,8 @@ Redmine::Plugin.register :redmine_scm do
   author 'Andriy Lesyuk; maintained by www.SaaS-Secure.com, S. Ruttloff'
   author_url 'https://www.saas-secure.com/'
   description 'Modernized continuation of SCM Creator for local SCM and GitHub repositories.'
-  url 'https://www.redmine.org/plugins/redmine_scm'
-  version '2.3.5'
+  url 'https://github.com/ayaye/redmine_scm'
+  version '2.3.5-r1'
 end
 
 apply_scm_creator_patches = proc do
