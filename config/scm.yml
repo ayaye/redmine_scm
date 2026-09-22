@@ -1,0 +1,60 @@
+production:
+  deny_delete: false
+  auto_create: false
+  force_repository: false
+  pre_create: /usr/local/bin/pre-create.sh
+  post_create: /usr/local/bin/post-create.sh
+  pre_delete: /usr/local/bin/pre-delete.sh
+  post_delete: /usr/local/bin/post-delete.sh
+  max_repos: 0
+  only_creator: false
+  allow_add_local: false
+  allow_pickup: false
+  svn:
+    path: /var/lib/svn
+    svnadmin: /usr/bin/svnadmin
+    url: <%= ENV['REDMINE_SCM_SVN_URL'] %>
+  git:
+    path: /var/lib/git
+    git: /usr/bin/git
+    options: --bare
+    url: <%= ENV['REDMINE_SCM_GIT_URL'] %>
+    update_server_info: true
+    git_ext: true
+    append: trunk
+  mercurial:
+    path: /var/lib/mercurial
+    hg: /usr/bin/hg
+  bazaar:
+    path: /var/lib/bazaar
+    bzr: /usr/bin/bzr
+    init: init-repository
+    log_encoding: UTF-8
+  github:
+    path: /var/lib/github
+    minimum_free_space_mb: 1024
+    clone_protocol: ssh
+    api:
+      token: <%= ENV['REDMINE_SCM_GITHUB_API_TOKEN'] %>
+      organization: <%= ENV['REDMINE_SCM_GITHUB_ORGANIZATION'] %>
+      register_hook: true
+      open_timeout: 5
+      timeout: 15
+  vcsadmin_git:
+    # Optional connector-wide operational defaults. Each repository stores its
+    # own VCSAdmin API base URL and credentials in Redmine project settings.
+    open_timeout: 5
+    read_timeout: 20
+    page_size: 25
+    sync_batch_size: 25
+    initial_import_batch_size: 50
+    max_pages_per_sync: 3
+    max_response_bytes: 6291456
+    max_file_bytes: 1048576
+    retry_count: 1
+    max_retry_after: 2
+    verify_tls: true
+    allow_http_development: false
+    cache_duration: 0
+
+development:

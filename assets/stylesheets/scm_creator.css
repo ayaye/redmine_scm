@@ -1,0 +1,46 @@
+input#repository_url {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#repository-form:has(.scm-creator-exclusive-action) > p > input[type="submit"][name="commit"] {
+    display: none;
+}
+
+.scm-creator-actions {
+    margin: 0 0 12px 180px;
+}
+
+#repository_url + #scm_creator_button {
+    margin-inline-start: 6px;
+}
+
+.scm-github-test-result {
+    margin-inline-start: 6px;
+}
+
+.scm-github-test-result.success {
+    color: var(--success-color, #3a7d44);
+}
+
+.scm-github-health-box {
+    margin-top: 12px;
+}
+
+.scm-github-health {
+    display: grid;
+    grid-template-columns: minmax(120px, max-content) 1fr;
+    gap: 4px 12px;
+    margin: 8px 0;
+}
+
+.scm-github-health dt,
+.scm-github-health dd {
+    margin: 0;
+}
+
+@media screen and (max-width: 899px) {
+    .scm-creator-actions {
+        margin-inline-start: 0;
+    }
+}

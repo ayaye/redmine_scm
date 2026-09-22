@@ -1,0 +1,124 @@
+en:
+  button_create_new_repository: Create new local repository
+  button_create_github_repository: Create mirror repository
+  button_github_test_connection: Test GitHub connection
+  button_github_refresh_mirror: Refresh mirror
+  button_github_register_secure_webhook: Register secure webhook
+  button_vcsadmin_test_connection: Test VCSAdmin connection
+  button_vcsadmin_synchronize: Synchronize changesets
+
+  label_repository_url: Repository URL
+  label_repository_format: repository
+
+  field_scm: SCM
+  field_github_url: GitHub URL
+  field_github_login: GitHub username
+  field_github_api_token: GitHub access token
+  field_github_webhook_url: GitHub webhook URL
+  field_vcsadmin_base_url: VCSAdmin repository URL
+  field_vcsadmin_username: VCSAdmin username
+  field_vcsadmin_password: VCSAdmin password
+  field_extra_register_hook: Register hook for fetching commits
+
+  label_github_mirror_health: Mirror health
+  label_github_mirror_status: Status
+  label_github_mirror_status_ready: Ready
+  label_github_mirror_status_error: Error
+  label_github_mirror_status_busy: Refresh in progress
+  label_github_mirror_status_missing: Missing
+  label_github_mirror_last_fetch: Last successful fetch
+  label_github_mirror_size: Local size
+  label_github_mirror_last_error: Last error
+  label_vcsadmin_sync_default_branch: Default branch only
+  label_vcsadmin_sync_information: VCSAdmin synchronization
+  label_vcsadmin_remote_repository: Remote repository
+  label_vcsadmin_default_branch: Default branch
+  label_vcsadmin_sync_status: Synchronization status
+  label_vcsadmin_initial_import_status: Initial import
+  label_vcsadmin_last_sync: Last successful synchronization
+  label_vcsadmin_last_error: Last error
+  label_vcsadmin_sync_status_pending: Pending
+  label_vcsadmin_sync_status_importing: Importing
+  label_vcsadmin_sync_status_ready: Ready
+  label_vcsadmin_sync_status_busy: Another synchronization is running
+  label_vcsadmin_sync_status_error: Error
+  label_vcsadmin_initial_status_pending: Pending
+  label_vcsadmin_initial_status_initial_import: Importing changesets
+  label_vcsadmin_initial_status_initial_reconcile: Reconciling commit parents
+  label_vcsadmin_initial_status_complete: Complete
+  label_vcsadmin_initial_status_error: Error
+
+  text_github_repository_note_new: GitHub.com only; GitLab is not supported. Saving an existing repository URL automatically creates its local Redmine mirror. Enter a repository name to create the remote repository and mirror together.
+  text_github_credentials_note: The repository token is used for GitHub API operations and overrides the server environment token. For HTTPS mirrors, the username is optional and defaults to x-access-token.
+  text_github_register_hook_note: Register a signed push webhook that refreshes this Redmine repository. The GitHub token requires webhook write permission.
+  text_github_webhook_url_note: This endpoint is used by the secure plugin-managed webhook and verifies GitHub's SHA-256 signature. The signing secret is never displayed.
+  text_github_webhook_url_unavailable: The GitHub webhook URL is unavailable. Configure Redmine's public host name first.
+  text_vcsadmin_base_url_note: Enter the complete VCSAdmin repository API URL ending in /api/v1/scm/repositories/ID. HTTPS is required in production.
+  text_vcsadmin_credentials_note: The password is stored using Redmine's repository credential ciphering. Leaving this field empty preserves the stored password.
+  text_cannot_be_changed_later: Cannot be changed later.
+  text_cannot_be_used_redmine_auth: Redmine based authentication can not be used with this repository name.
+  text_scm_creator_not_configured_warning: SCM Creator installed but not configured.
+  text_scm_repository_created_by_scm: The repository on the file system was created especially for Redmine. By deleting its Redmine entry you may make it useless.
+  text_scm_repository_destroy_confirmation: Do you want to remove the repository from the file system as well?
+
+  warning_github_hook_registration_failed: GitHub push webhook registration failed.
+  warning_repository_deletion_failed: Repository deletion failed.
+  notice_github_connection_ok: "Connected to GitHub as %{account}."
+  notice_github_connection_repository_ok: "Connected as %{account}; repository %{repository} is accessible."
+  notice_github_mirror_refreshed: GitHub mirror refreshed successfully.
+  notice_github_webhook_registered: Secure GitHub webhook registered successfully.
+  notice_vcsadmin_repository_connection_ok: "Connected to VCSAdmin; repository %{repository} is accessible."
+  notice_vcsadmin_sync_batch_complete: The bounded VCSAdmin changeset synchronization batch completed.
+  error_github_token_missing: Enter a GitHub token or configure the server token first.
+  error_github_repository_not_accessible: The GitHub repository does not exist or is not accessible with this token.
+  error_github_connection_failed: "GitHub connection failed: %{message}"
+  error_github_connection_failed_generic: GitHub connection failed.
+  error_github_mirror_refresh_failed: GitHub mirror refresh failed.
+  error_github_mirror_refresh_in_progress: Another mirror refresh is already running.
+  error_vcsadmin_configuration: The VCSAdmin connector configuration is invalid or incomplete.
+  error_vcsadmin_authentication: VCSAdmin authentication failed.
+  error_vcsadmin_tls: VCSAdmin TLS certificate validation failed.
+  error_vcsadmin_dns: The VCSAdmin host could not be resolved.
+  error_vcsadmin_connection_refused: VCSAdmin refused the connection.
+  error_vcsadmin_connect_timeout: The VCSAdmin connection timed out.
+  error_vcsadmin_read_timeout: The VCSAdmin response timed out.
+  error_vcsadmin_api_version: The VCSAdmin API version is incompatible.
+  error_vcsadmin_capability: VCSAdmin does not provide all capabilities required by this connector.
+  error_vcsadmin_repository_not_accessible: The VCSAdmin Git repository does not exist or is not accessible to the configured account.
+  error_vcsadmin_response_too_large: The VCSAdmin response or configured resource limit was exceeded.
+  error_vcsadmin_rate_limit: VCSAdmin rate-limited the request.
+  error_vcsadmin_service_unavailable: VCSAdmin is temporarily unavailable.
+  error_vcsadmin_invalid_response: VCSAdmin returned invalid JSON or an unexpected response.
+  error_vcsadmin_connection: The VCSAdmin connection failed.
+  error_vcsadmin_request_failed: The VCSAdmin request failed.
+  error_vcsadmin_sync_failed: VCSAdmin changeset synchronization failed.
+  error_vcsadmin_sync_in_progress: Another synchronization for this repository is already running.
+  error_vcsadmin_sync_migration_required: The VCSAdmin synchronization lock table is unavailable. Run the plugin migrations.
+  error_vcsadmin_file_too_large: This file exceeds a VCSAdmin or Redmine connector display limit.
+  error_vcsadmin_binary_unavailable: VCSAdmin API v1 does not provide binary file content.
+  error_vcsadmin_diff_truncated: "VCSAdmin truncated this diff at %{limit} bytes; the incomplete diff is not displayed."
+  error_vcsadmin_arbitrary_comparison_unsupported: VCSAdmin API v1 does not support arbitrary comparison between two revisions.
+
+  activerecord:
+    errors:
+      messages:
+        should_be_of_format_local: should be of format "%{repository_format}"
+        already_exists: already exists
+        scm_not_supported: This SCM is not supported
+        repository_exists_for_identifier: Repository already exists for this project identifier
+        scm_repositories_maximum_count_exceeded: Maximum count (%{max}) of repositories exceeded
+        scm_local_repositories_denied: Adding local repositories was denied by administrator
+        scm_only_creator: Use "Create new repository" button to create/add a repository
+        scm_repository_creation_failed: Repository creation failed
+        scm_repository_cloning_failed: Repository cloning failed
+        scm_github_mirror_path_invalid: The local GitHub mirror path is outside the configured mirror root
+        scm_github_mirror_root_not_writable: The configured GitHub mirror root is not writable
+        scm_github_mirror_disk_space_low: "The GitHub mirror root has less than the configured %{minimum} MB of free space"
+        scm_github_mirror_path_occupied: The local GitHub mirror path exists but is not a valid bare repository
+        scm_github_mirror_preflight_failed: GitHub mirror preflight checks failed
+        github_api_request_failed: "GitHub API request failed: %{message}"
+        github_repository_not_accessible: "GitHub repository %{repository} does not exist or is not accessible with this token"
+        vcsadmin_configuration_invalid: The VCSAdmin connector configuration is invalid
+        vcsadmin_repository_url_required: must be a complete VCSAdmin repository URL ending in /api/v1/scm/repositories/ID
+        vcsadmin_repository_incompatible: The selected VCSAdmin repository is not a compatible read-only Git repository
+        vcsadmin_repository_not_accessible: The selected VCSAdmin repository was not returned for this account
